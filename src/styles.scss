@@ -12,7 +12,8 @@
 }
 
 @layer components {
-  .header-container {
+  .header-container,
+  .footer-container {
     @apply max-w-[100%];
   }
 }

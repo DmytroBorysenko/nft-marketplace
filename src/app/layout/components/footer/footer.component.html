@@ -1,0 +1,55 @@
+<div class="footer-container px-48 py-10 bg-bgPrimary lg:px-9 lg:py-3">
+  <div class="flex md:flex-col md:gap-7">
+    <div class="w-4/12 md:w-1/2 sm:w-full">
+      <a class="flex items-center text-xl gap-2 lg:text-base" href="#">
+        <img class="w-8 h-8 lg:w-7 lg:h-7 md:w-6 md:h-6" src="assets/img/nav/Storefront.svg" alt="logo" />
+        <span class="text-white font-spaceMono text-xl font-bold leading-relaxed"> NFT Marketplace</span>
+      </a>
+      <p class="w-60 pt-8 text-grey text-base">NFT marketplace UI created with Anima for Figma.</p>
+      <p class="w-60 pt-5 text-grey text-base">Join our community:</p>
+      <ul class="flex items-center gap-2">
+        <li *ngFor="let item of socialLink" class="hover:scale-95 transition-transform">
+          <a [href]="item.link">
+            <img src="assets/img/icons/{{ item.icon }}.svg" alt="social" class="social" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-4/12 md:w-1/2 sm:w-full">
+      <p class="text-white font-spaceMono text-xl font-bold leading-relaxed">Explore</p>
+      <ul class="flex flex-col gap-5 pt-6">
+        <li *ngFor="let nav of navTabs">
+          <a [href]="nav.path" class="text-grey text-base font-normal leading-snug"> {{ nav.title }} </a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-4/12 md:w-1/2 sm:w-full">
+      <p class="text-white font-spaceMono text-xl font-bold leading-relaxed">Join our weekly digest</p>
+      <p class="w-80 pt-8 text-grey text-base">Get exclusive promotions & updates straight to your inbox.</p>
+      <div class="w-96 flex items-center mt-5 pl-5 justify-between rounded-[20px] bg-white lg:w-80 sm:hidden">
+        <input
+          class="text-black text-base font-normal leading-snug focus:outline-none placeholder:text-black w-52 lg:w-44"
+          type="text"
+          placeholder="Enter your email here"
+        />
+        <div
+          class="bg-callToAction rounded-[20px] flex items-center justify-center text-white cursor-pointer h-12 w-44 hover:scale-95 hover:origin-center hover:transition-transform"
+        >
+          Subscribe
+        </div>
+      </div>
+      <div class="hidden sm:flex flex-col gap-4">
+        <input
+          class="text-black text-base font-normal rounded-[20px] leading-snug focus:outline-none placeholder:text-black w-full h-12 px-5"
+          type="text"
+          placeholder="Enter your email here"
+        />
+        <div
+          class="bg-callToAction rounded-[20px] flex items-center justify-center text-white cursor-pointer h-12 w-full hover:scale-95 hover:origin-center hover:transition-transform"
+        >
+          Subscribe
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

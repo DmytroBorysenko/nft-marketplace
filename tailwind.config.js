@@ -15,8 +15,8 @@ module.exports = {
       colors: {
         bgPrimary: '#2B2B2B',
         bgSecondary: '#3B3B3B',
-        textPrimary: '#858584',
-        textSecondary: '#FFFFFF',
+        grey: '#858584',
+        white: '#FFFFFF',
         callToAction: '#A259FF',
       },
       fontFamily: {

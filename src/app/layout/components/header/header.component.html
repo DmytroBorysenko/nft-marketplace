@@ -2,19 +2,19 @@
   <nav class="flex justify-between items-center">
     <a class="flex items-center text-xl gap-2 lg:text-base" href="#">
       <img class="w-8 h-8 lg:w-7 lg:h-7 md:w-6 md:h-6" src="assets/img/nav/Storefront.svg" alt="logo" />
-      <span class="font-spaceMono text-textSecondary"> NFT Marketplace</span>
+      <span class="font-spaceMono text-white"> NFT Marketplace</span>
     </a>
 
     <ul class="flex gap-2 py-2 items-center md:hidden">
-      <li class="hover:scale-95 transition-transform" *ngFor="let nav of NAV_TABS">
-        <a class="font-semibold leading-snug text-textSecondary text-base py-3 px-5 lg:text-sm" [href]="nav.path">
+      <li class="hover:scale-95 transition-transform" *ngFor="let nav of navTabs">
+        <a class="font-semibold leading-snug text-white text-base py-3 px-5 lg:text-sm" [href]="nav.path">
           {{ nav.title }}</a
         >
       </li>
 
       <li class="hover:scale-95 hover:transition-transform">
         <a
-          class="flex items-center gap-3 py-4 px-7 rounded-[20px] font-semibold leading-snug text-textSecondary text-base bg-callToAction lg:text-sm"
+          class="flex items-center gap-3 py-4 px-7 rounded-[20px] font-semibold leading-snug text-white text-base bg-callToAction lg:text-sm"
           href="/login"
         >
           <img class="w-5 h-5" src="assets/img/icons/User.svg" alt="user" /> Login</a
@@ -24,20 +24,20 @@
 
     <ul #mobileMenu class="absolute left-0 right-0 top-12 bg-callToAction hidden flex-col items-center py-3 gap-2">
       <li
-        class="border-2 border-textSecondary w-11/12 text-center hover:scale-95 hover:transition-transform"
-        *ngFor="let nav of NAV_TABS"
+        class="border-2 border-white w-11/12 text-center hover:scale-95 hover:transition-transform"
+        *ngFor="let nav of navTabs"
       >
         <a
-          class="block py-4 text-textSecondary font-semibold leading-snug text-base lg:text-sm sm:text-xs sm:font-normal"
+          class="block py-4 text-white font-semibold leading-snug text-base lg:text-sm sm:text-xs sm:font-normal"
           [href]="nav.path"
         >
           {{ nav.title }}</a
         >
       </li>
 
-      <li class="border-2 border-textSecondary w-11/12 text-center hover:scale-95 hover:transition-transform">
+      <li class="border-2 border-white w-11/12 text-center hover:scale-95 hover:transition-transform">
         <a
-          class="flex items-center justify-center gap-3 py-4 text-textSecondary font-semibold leading-snug text-base lg:text-sm sm:text-xs sm:font-normal"
+          class="flex items-center justify-center gap-3 py-4 text-white font-semibold leading-snug text-base lg:text-sm sm:text-xs sm:font-normal"
           href="/login"
         >
           <img class="w-5 h-5" src="assets/img/icons/User.svg" alt="user" /> Login</a

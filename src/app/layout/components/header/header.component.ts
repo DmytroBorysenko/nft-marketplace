@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NAV_TABS } from '../const';
 
 @Component({
   selector: 'app-header',
@@ -6,20 +7,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  NAV_TABS = [
-    {
-      title: 'Marketplace',
-      path: '/marketplace',
-    },
-    {
-      title: 'Rankings',
-      path: '/rankings',
-    },
-    {
-      title: 'Connect a wallet',
-      path: '/connect-wallet',
-    },
-  ];
+  public navTabs = NAV_TABS;
   @ViewChild('mobileMenu') mobileMenu: ElementRef;
   constructor() {}
 
