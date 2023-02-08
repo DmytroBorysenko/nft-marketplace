@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "dist/nft-marketplace",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "database": {
+    "rules": "N"
+  }
+}

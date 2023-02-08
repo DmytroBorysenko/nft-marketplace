@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "nft-marketplace-777",
+    "development": "nft-marketplace-777"
+  },
+  "targets": {},
+  "etags": {}
+}
