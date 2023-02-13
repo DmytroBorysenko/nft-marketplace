@@ -15,12 +15,30 @@ module.exports = {
       colors: {
         bgPrimary: '#2B2B2B',
         bgSecondary: '#3B3B3B',
-        grey: '#858584',
+        gray: '#858584',
         white: '#FFFFFF',
         callToAction: '#A259FF',
       },
       fontFamily: {
         spaceMono: ['Space Mono'],
+      },
+      invert: {
+        55: '.55',
+      },
+      sepia: {
+        05: '.05',
+      },
+      saturate: {
+        74: '.74',
+      },
+      hueRotate: {
+        21: '21deg',
+      },
+      brightness: {
+        94: '.94',
+      },
+      contrast: {
+        90: '.90',
       },
     },
   },

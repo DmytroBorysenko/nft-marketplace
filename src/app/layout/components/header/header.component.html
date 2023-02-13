@@ -13,16 +13,13 @@
       </li>
 
       <li class="hover:scale-95 hover:transition-transform">
-        <a
-          class="flex items-center gap-3 py-4 px-7 rounded-[20px] font-semibold leading-snug text-white text-base bg-callToAction lg:text-sm"
-          href="/login"
-        >
-          <img class="w-5 h-5" src="assets/img/icons/User.svg" alt="user" /> Login</a
+        <a class="flex items-center gap-3 py-4 px-7 btn-prime lg:text-sm" href="/auth/login">
+          <img class="w-5 h-5" src="assets/img/icons/User.svg" alt="user" />Login</a
         >
       </li>
     </ul>
 
-    <ul #mobileMenu class="absolute left-0 right-0 top-12 bg-callToAction hidden flex-col items-center py-3 gap-2">
+    <ul #mobileMenu class="absolute left-0 right-0 top-12 bg-callToAction hidden flex-col items-center py-3 gap-2 z-50">
       <li
         class="border-2 border-white w-11/12 text-center hover:scale-95 hover:transition-transform"
         *ngFor="let nav of navTabs"
@@ -38,7 +35,7 @@
       <li class="border-2 border-white w-11/12 text-center hover:scale-95 hover:transition-transform">
         <a
           class="flex items-center justify-center gap-3 py-4 text-white font-semibold leading-snug text-base lg:text-sm sm:text-xs sm:font-normal"
-          href="/login"
+          href="/auth/login"
         >
           <img class="w-5 h-5" src="assets/img/icons/User.svg" alt="user" /> Login</a
         >

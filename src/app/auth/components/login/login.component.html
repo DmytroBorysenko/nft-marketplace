@@ -1,0 +1,24 @@
+<div class="w-full flex gap-14 bg-bgPrimary self-stretch lg:gap-10 md:flex-col md:justify-center">
+  <img
+    src="/assets/img/auth/bg.png"
+    class="flex-1 min-w-[610px] h-[691px] object-cover lg:min-w-[391px] md:min-w-[375px] md:h-[234px] md:flex-none sm:min-w-[100px]"
+    alt="bng"
+  />
+
+  <div class="form-login flex flex-1 flex-col py-40 md:py-8 md:items-center">
+    <p class="font-spaceMono text-3xl text-white md:text-2xl sm:text-lg">Welcome!<br />Please log in:</p>
+    <form class="login-form flex flex-col gap-4 pt-10 pb-5 w-72" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="flex input-form">
+        <img src="/assets/img/icons/User.svg" class="icon h-5 w-5" alt="user" />
+        <input #login formControlName="login" type="text" class="ml-3 focus:outline-none" placeholder="Login" />
+      </div>
+      <div class="flex input-form">
+        <img src="/assets/img/icons/LockKey.svg" class="icon h-5 w-5" alt="user" />
+        <input #pass formControlName="pass" type="password" class="ml-3 focus:outline-none" placeholder="Password" />
+      </div>
+      <input class="btn-prime" type="submit" [disabled]="loginForm.invalid" value="Login" />
+    </form>
+    <p class="w-72 pb-5 text-lg text-white text-center">or</p>
+    <a href="#" class="w-72 block text-center btn-prime">Create Account</a>
+  </div>
+</div>

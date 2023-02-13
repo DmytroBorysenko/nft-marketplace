@@ -16,4 +16,18 @@
   .footer-container {
     @apply max-w-[100%];
   }
+
+  .btn-prime {
+    @apply py-3 bg-callToAction rounded-[20px] text-white text-base font-semibold leading-5 hover:scale-95 hover:origin-center hover:transition-transform;
+    @apply md:font-normal sm:leading-snug;
+    @apply disabled:bg-bgSecondary disabled:text-gray disabled:hover:scale-100;
+  }
+
+  .input-form {
+    @apply px-5 py-3 rounded-[20px] text-gray text-base placeholder:text-gray bg-white font-normal leading-snug;
+  }
+
+  .icon {
+    @apply invert-55 sepia-5 saturate-74 hue-rotate-21 brightness-94 contrast-90;
+  }
 }
